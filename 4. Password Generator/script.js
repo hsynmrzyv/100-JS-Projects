@@ -30,3 +30,25 @@ const [decreaseBtn, increaseBtn] = counterBtns;
 // Generate and Copy
 const generateBtn = document.querySelector(".generate-btn");
 const copyBtn = document.querySelector(".copy-btn");
+
+// Functionality
+let counter = 6;
+counterEl.textContent = counter;
+
+// Decrease counter if it is greater than 6
+decreaseBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  if (counter > 6) {
+    counter--;
+  }
+  counterEl.textContent = counter;
+});
+
+// Increase counter if it is lesser than 20
+increaseBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  if (counter < 20) {
+    counter++;
+  }
+  counterEl.textContent = counter;
+});
