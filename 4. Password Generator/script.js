@@ -103,8 +103,14 @@ copyBtn.addEventListener("click", function (event) {
 
   modalEl.classList.add("active");
   backdropEl.classList.add("active");
-  modalTitle.textContent = "Success";
-  modalMessage.textContent = "Password successfully copied to clipboard";
+
+  if (passwordEl.textContent) {
+    modalTitle.textContent = "Success";
+    modalMessage.textContent = "Password successfully copied to clipboard";
+  } else {
+    modalTitle.textContent = "Error";
+    modalMessage.textContent = "There is nothing to copy to clipboard";
+  }
 });
 
 backdropEl.addEventListener("click", function () {
@@ -117,3 +123,5 @@ modalBtn.addEventListener("click", function (event) {
   backdropEl.classList.remove("active");
   modalEl.classList.remove("active");
 });
+
+console.log(passwordEl.textContent);
