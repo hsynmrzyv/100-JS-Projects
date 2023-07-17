@@ -54,8 +54,10 @@ increaseBtn.addEventListener("click", function (event) {
 });
 
 // getRandom gives a random character from on of the selected inptus
+const chars = [];
+
 const getRandom = () => {
-  const chars = [];
+  chars.length = 0;
 
   if (upperInput.checked) {
     chars.push(
@@ -81,6 +83,7 @@ const getRandom = () => {
     return "";
   }
 
+  console.log(chars);
   return chars[Math.floor(Math.random() * chars.length)];
 };
 
@@ -94,6 +97,7 @@ generateBtn.addEventListener("click", function (event) {
     _password += getRandom();
   }
 
+  console.log(_password);
   passwordEl.textContent = _password ? _password : "Please check some inputs";
 });
 
@@ -123,5 +127,3 @@ modalBtn.addEventListener("click", function (event) {
   backdropEl.classList.remove("active");
   modalEl.classList.remove("active");
 });
-
-console.log(passwordEl.textContent);
