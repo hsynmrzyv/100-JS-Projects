@@ -84,4 +84,15 @@ const getRandom = () => {
   return chars[Math.floor(Math.random() * chars.length)];
 };
 
+// Generates a password when the user clicks the generate password button
+generateBtn.addEventListener("click", function (event) {
+  event.preventDefault();
 
+  let _password = "";
+
+  for (let i = 0; i < counter; i++) {
+    _password += getRandom();
+  }
+
+  passwordEl.textContent = _password ? _password : "Please check some inputs";
+});
