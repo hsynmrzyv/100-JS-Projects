@@ -96,3 +96,24 @@ generateBtn.addEventListener("click", function (event) {
 
   passwordEl.textContent = _password ? _password : "Please check some inputs";
 });
+
+// Modal functionality
+copyBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  modalEl.classList.add("active");
+  backdropEl.classList.add("active");
+  modalTitle.textContent = "Success";
+  modalMessage.textContent = "Password successfully copied to clipboard";
+});
+
+backdropEl.addEventListener("click", function () {
+  backdropEl.classList.remove("active");
+  modalEl.classList.remove("active");
+});
+
+modalBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  backdropEl.classList.remove("active");
+  modalEl.classList.remove("active");
+});
