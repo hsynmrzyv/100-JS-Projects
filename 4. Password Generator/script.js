@@ -52,3 +52,36 @@ increaseBtn.addEventListener("click", function (event) {
   }
   counterEl.textContent = counter;
 });
+
+// getRandom gives a random character from on of the selected inptus
+const getRandom = () => {
+  const chars = [];
+
+  if (upperInput.checked) {
+    chars.push(
+      upperCaseLetters[Math.floor(Math.random() * upperCaseLetters.length)]
+    );
+  }
+
+  if (lowerInput.checked) {
+    chars.push(
+      lowerCaseLetters[Math.floor(Math.random() * lowerCaseLetters.length)]
+    );
+  }
+
+  if (numbersInput.checked) {
+    chars.push(numbers[Math.floor(Math.random() * numbers.length)]);
+  }
+
+  if (symbolsInput.checked) {
+    chars.push(special[Math.floor(Math.random() * special.length)]);
+  }
+
+  if (chars.length === 0) {
+    return "";
+  }
+
+  return chars[Math.floor(Math.random() * chars.length)];
+};
+
+
