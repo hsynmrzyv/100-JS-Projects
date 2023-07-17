@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="backdrop"></div>
+      <div class="modal">
+        <h2>Title</h2>
+        <p>Message</p>
+        <button>Okay</button>
+      </div>
+      <div class="generator">
+        <h2 class="generator__title">Password Generator</h2>
+        <h4 class="password"></h4>
+
+        <form class="generator__form">
+          <div class="generator__form-controls">
+            <div class="generator__form-control">
+              <label for="uppercase">Uppercase</label>
+              <input type="checkbox" id="uppercase" name="uppercase" />
+            </div>
+            <div class="generator__form-control">
+              <label for="lowercase">Lowercase</label>
+              <input type="checkbox" id="lowercase" name="lowercase" />
+            </div>
+
+            <div class="generator__form-control">
+              <label for="numbers">Numbers</label>
+              <input type="checkbox" id="numbers" name="numbers" />
+            </div>
+
+            <div class="generator__form-control">
+              <label for="symbols">Symbols</label>
+              <input type="checkbox" id="symbols" name="symbols" />
+            </div>
+
+            <div class="generator__length">
+              <h4 class="generator__length-title">Password Length</h4>
+              <div class="generator__length-counter">
+                <button>-</button>
+                <span>0</span>
+                <button>+</button>
+              </div>
+            </div>
+            <div class="generator__form-actions">
+              <button class="btn generate-btn">Generate Password</button>
+              <button class="btn copy-btn">Copy Password</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
