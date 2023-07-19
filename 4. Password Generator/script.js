@@ -108,12 +108,15 @@ copyBtn.addEventListener("click", function (event) {
   modalEl.classList.add("active");
   backdropEl.classList.add("active");
 
-  if (passwordEl.textContent) {
-    modalTitle.textContent = "Success";
-    modalMessage.textContent = "Password successfully copied to clipboard";
-  } else {
+  if (
+    passwordEl.textContent === "Please check some inputs" ||
+    !passwordEl.textContent
+  ) {
     modalTitle.textContent = "Error";
     modalMessage.textContent = "There is nothing to copy to clipboard";
+  } else {
+    modalTitle.textContent = "Success";
+    modalMessage.textContent = "Password successfully copied to clipboard";
   }
 });
 
