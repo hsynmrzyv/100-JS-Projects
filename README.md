@@ -4,6 +4,8 @@ Primary purpose of this project is to monitor and display the character count in
 
 [The Character Limit Tracker](https://github.com/hsynmrzyv/100-JS-Projects/tree/main/1.%20Character%20Limits%20Tracker) {:target="_blank"} | [Live Demo](https://characterlimitstracker.netlify.app/) {:target="_blank"}
 
+<a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/1.%20Character%20Limits%20Tracker' target='_blank'><Live Demo</a>
+
 <img src='Images/1-1.png' width='600px'>
 <img src='Images/1-2.png' width='600px'>
 <img src='Images/1-3.png' width='600px'>
