@@ -2,9 +2,9 @@
 
 Primary purpose of this project is to monitor and display the character count in a text box in real-time. The application restricts the user from typing more than 100 words and provides immediate feedback if the character limit is exceeded.
 
-[The Character Limit Tracker](https://github.com/hsynmrzyv/100-JS-Projects/tree/main/1.%20Character%20Limits%20Tracker) {:target="_blank"} | [Live Demo](https://characterlimitstracker.netlify.app/) {:target="_blank"}
 
-<a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/1.%20Character%20Limits%20Tracker' target='_blank'>Live Demo</a>
+
+<a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/1.%20Character%20Limits%20Tracker'>The Character Limit Tracker</a> | <a href='https://characterlimitstracker.netlify.app/'>Live Demo</a>
 
 <img src='Images/1-1.png' width='600px'>
 <img src='Images/1-2.png' width='600px'>
