@@ -2,8 +2,6 @@
 
 Primary purpose of this project is to monitor and display the character count in a text box in real-time. The application restricts the user from typing more than 100 words and provides immediate feedback if the character limit is exceeded.
 
-
-
 <a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/1.%20Character%20Limits%20Tracker'>The Character Limit Tracker</a> | <a href='https://characterlimitstracker.netlify.app/'>Live Demo</a>
 
 <img src='Images/1-1.png' width='600px'>
@@ -14,12 +12,16 @@ Primary purpose of this project is to monitor and display the character count in
 
 With just a click of a button, it generates a random color and dynamically changes the background color of the page to that selected color.
 
+<a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/2.%20Random%20Color%20Generator'>The Character Limit Tracker</a> | <a href='https://randomcolorgenerator-2.netlify.app/'>Live Demo</a>
+
 <img src='Images/2-1.png' width='600px'>
 <img src='Images/2-2.png' width='600px'>
 
 ### 3. Keyboard Event Logger
 
 This project allows users to explore and understand the different keyboard events by displaying the event.key, event.keyCode, and event.code values on the screen as they press any key on their keyboard.
+
+<a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/3.%20Keyboard%20Event%20Logger'>The Character Limit Tracker</a> | <a href='https://keyboardeventlogger-3.netlify.app/'>Live Demo</a>
 
 <img src='Images/3-1.png' width='600px'>
 <img src='Images/3-2.png' width='600px'>
