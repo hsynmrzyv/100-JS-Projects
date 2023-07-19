@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search">
+        <input type="text" placeholder="Search" id="search-input" />
+      </div>
+      <ul class="track-list">
+        <li class="track">
+          <span class="rating">1</span>
+          <div class="track-img">
+            <img src="Images/drake.jpeg" alt="" />
+          </div>
+          <div class="track-desc">
+            <h3 class="name">In My Feelings</h3>
+            <p class="artist">Drake</p>
+          </div>
+          <span class="streams">1,213,243</span>
+        </li>
+      </ul>
+      <button class="show more">Show More</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
