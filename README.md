@@ -14,8 +14,8 @@ With just a click of a button, it generates a random color and dynamically chang
 
 <a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/2.%20Random%20Color%20Generator'>The Character Limit Tracker</a> | <a href='https://randomcolorgenerator-2.netlify.app/'>Live Demo</a>
 
-<img src='Images/2-1.png' width='600px'>
-<img src='Images/2-2.png' width='600px'>
+| ----------------------------------- | ----------------------------------- |
+| <img src='Images/2-1.png' width='50%'> | <img src='Images/2-2.png' width='50%'>|
 
 ### 3. Keyboard Event Logger
 
@@ -23,5 +23,16 @@ This project allows users to explore and understand the different keyboard event
 
 <a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/3.%20Keyboard%20Event%20Logger'>The Character Limit Tracker</a> | <a href='https://keyboardeventlogger-3.netlify.app/'>Live Demo</a>
 
-<img src='Images/3-1.png' width='600px'>
-<img src='Images/3-2.png' width='600px'>
+| ----------------------------------- | ----------------------------------- |
+| <img src='Images/3-1.png' width='50%'> | <img src='Images/3-2.png' width='50%'>|
+
+### 4. Password Generator
+
+<a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/4.%20Password%20Generator'>The Character Limit Tracker</a> | <a href='https://passwordgenerator-4.netlify.app/'>Live Demo</a>
+
+The Password Generator offers customizable options to create strong and secure passwords.Users can choose from four types of characters to include in the password: uppercase letters, lowercase letters, numbers, and symbols. By selecting or deselecting these options, users can customize the password's complexity to suit their needs.The generator includes a counter that allows users to set the desired password length.
+
+<img src='Images/4-1.png' width='600px'>
+<img src='Images/4-2.png' width='600px'>
+<img src='Images/4-3.png' width='600px'>
+<img src='Images/4-4.png' width='600px'>
