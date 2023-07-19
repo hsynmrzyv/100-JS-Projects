@@ -4,9 +4,11 @@ Primary purpose of this project is to monitor and display the character count in
 
 <a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/1.%20Character%20Limits%20Tracker'>The Character Limit Tracker</a> | <a href='https://characterlimitstracker-1.netlify.app/'>Live Demo</a>
 
-<img src='Images/1-1.png' width='600px'>
-<img src='Images/1-2.png' width='600px'>
-<img src='Images/1-3.png' width='600px'>
+<div>
+<img src='Images/1-1.png' width='33%'>
+<img src='Images/1-2.png' width='33%'>
+<img src='Images/1-3.png' width='33%'>
+</div>
 
 ### 2. The Random Color Generator
 
@@ -14,8 +16,10 @@ With just a click of a button, it generates a random color and dynamically chang
 
 <a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/2.%20Random%20Color%20Generator'>The Character Limit Tracker</a> | <a href='https://randomcolorgenerator-2.netlify.app/'>Live Demo</a>
 
-| ----------------------------------- | ----------------------------------- |
-| <img src='Images/2-1.png' width='50%'> | <img src='Images/2-2.png' width='50%'>|
+<div>
+<img src='Images/2-1.png' width='50%'> 
+<img src='Images/2-2.png' width='50%'>
+</div>
 
 ### 3. Keyboard Event Logger
 
@@ -23,8 +27,10 @@ This project allows users to explore and understand the different keyboard event
 
 <a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/3.%20Keyboard%20Event%20Logger'>The Character Limit Tracker</a> | <a href='https://keyboardeventlogger-3.netlify.app/'>Live Demo</a>
 
-| ----------------------------------- | ----------------------------------- |
-| <img src='Images/3-1.png' width='50%'> | <img src='Images/3-2.png' width='50%'>|
+<div>
+<img src='Images/3-1.png' width='50%'> 
+<img src='Images/3-2.png' width='50%'>
+</div>
 
 ### 4. Password Generator
 
@@ -32,7 +38,10 @@ This project allows users to explore and understand the different keyboard event
 
 The Password Generator offers customizable options to create strong and secure passwords.Users can choose from four types of characters to include in the password: uppercase letters, lowercase letters, numbers, and symbols. By selecting or deselecting these options, users can customize the password's complexity to suit their needs.The generator includes a counter that allows users to set the desired password length.
 
-<img src='Images/4-1.png' width='600px'>
-<img src='Images/4-2.png' width='600px'>
-<img src='Images/4-3.png' width='600px'>
-<img src='Images/4-4.png' width='600px'>
+<div>
+<img src='Images/4-1.png' width='20%'>
+<img src='Images/4-2.png' width='20%'>
+<img src='Images/4-3.png' width='20%'>
+<img src='Images/4-4.png' width='20%'>
+<img src='Images/4-5.png' width='20%'>
+</div>
