@@ -33,31 +33,24 @@ const copyBtn = document.querySelector(".copy-btn");
 
 // Functionality
 let counter = 6;
+let myPassword = "";
+
 counterEl.textContent = counter;
 
-// Decrease counter if it is greater than 6
-decreaseBtn.addEventListener("click", function (event) {
-  event.preventDefault();
-  if (counter > 6) {
-    counter--;
-  }
+increaseBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  counter < 20 && counter++;
   counterEl.textContent = counter;
 });
 
-// Increase counter if it is lesser than 20
-increaseBtn.addEventListener("click", function (event) {
-  event.preventDefault();
-  if (counter < 20) {
-    counter++;
-  }
+decreaseBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  counter > 6 && counter--;
   counterEl.textContent = counter;
 });
-
-// getRandom gives a random character from on of the selected inptus
-const chars = [];
 
 const getRandom = () => {
-  chars.length = 0;
+  let chars = [];
 
   if (upperInput.checked) {
     chars.push(
@@ -83,50 +76,47 @@ const getRandom = () => {
     return "";
   }
 
-  console.log(chars);
   return chars[Math.floor(Math.random() * chars.length)];
 };
 
-// Generates a password when the user clicks the generate password button
-generateBtn.addEventListener("click", function (event) {
-  event.preventDefault();
-
-  let _password = "";
-
+const generatePassword = () => {
   for (let i = 0; i < counter; i++) {
-    _password += getRandom();
+    myPassword += getRandom();
   }
 
-  console.log(_password);
-  passwordEl.textContent = _password ? _password : "Please check some inputs";
+  passwordEl.textContent = myPassword ? myPassword : "Please check some input";
+};
+
+generateBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  generatePassword();
 });
 
-// Modal functionality
-copyBtn.addEventListener("click", function (event) {
-  event.preventDefault();
+copyBtn.addEventListener("click", (e) => {
+  e.preventDefault();
 
   modalEl.classList.add("active");
   backdropEl.classList.add("active");
 
-  if (
-    passwordEl.textContent === "Please check some inputs" ||
-    !passwordEl.textContent
-  ) {
-    modalTitle.textContent = "Error";
-    modalMessage.textContent = "There is nothing to copy to clipboard";
-  } else {
+  if (myPassword) {
     modalTitle.textContent = "Success";
-    modalMessage.textContent = "Password successfully copied to clipboard";
+    modalMessage.textContent = `Password (${myPassword}) is successfully copied to clipboard`;
+  } else {
+    modalTitle.textContent = "Error";
+    modalMessage.textContent = `There is nothing to copy`;
   }
 });
 
-backdropEl.addEventListener("click", function () {
-  backdropEl.classList.remove("active");
+const closeModal = () => {
   modalEl.classList.remove("active");
-});
+  backdropEl.classList.remove("active");
+};
 
-modalBtn.addEventListener("click", function (event) {
-  event.preventDefault();
-  backdropEl.classList.remove("active");
-  modalEl.classList.remove("active");
+modalBtn.addEventListener("click", closeModal);
+backdropEl.addEventListener("click", closeModal);
+window.addEventListener("keydown", (e) => {
+  if (e.code === "Escape") {
+    closeModal();
+  }
 });

@@ -119,5 +119,65 @@ const data = [
 ];
 
 const trackList = document.querySelector(".track-list");
-const showBtn = document.querySelector(".show");
+const showBtn = document.querySelector("#show");
+const streamBtn = document.querySelector("#sortByStream");
+const nameBtn = document.querySelector("#sortByName");
 const searchInput = document.querySelector("#search-input");
+
+const displayTracks = (tracks) => {
+  trackList.innerHTML = "";
+
+  tracks.forEach((track, index) => {
+    trackList.innerHTML += `<li class="track">
+    <span class="rating">${index + 1}</span>
+    <div class="track-img">
+      <img src="Images/${track.image}.jpeg" alt="" />
+    </div>
+    <div class="track-desc">
+      <h3 class="name">${track.song}</h3>
+      <p class="artist">${track.artist}</p>
+    </div>
+    <span class="streams">${track.streamed}</span>
+  </li>`;
+  });
+};
+
+displayTracks(data.slice(0, 5));
+
+showBtn.addEventListener("click", () => {
+  if (showBtn.textContent.includes("More")) {
+    displayTracks(data);
+    showBtn.innerHTML = "Show Less";
+  } else {
+    displayTracks(data.slice(0, 5));
+    showBtn.innerHTML = "Show More";
+  }
+});
+
+searchInput.addEventListener("input", (e) => {
+  const searchedData = data.filter((track) => {
+    return (
+      track.artist.toLowerCase().includes(e.target.value.toLowerCase()) ||
+      track.song.toLowerCase().includes(e.target.value.toLowerCase())
+    );
+  });
+
+  if (e.target.value) {
+    showBtn.style.display = "none";
+  } else {
+    showBtn.style.display = "block";
+  }
+
+  displayTracks(searchedData);
+});
+
+streamBtn.addEventListener("click", () => {
+  displayTracks(data.sort((a, b) => b.streamed - a.streamed));
+});
+
+nameBtn.addEventListener("click", () => {
+  const songsArray = data.map((track) => track.song).sort();
+  const sortedArray = [];
+
+  console.log(sortedArray);
+});
