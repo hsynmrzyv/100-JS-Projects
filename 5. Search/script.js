@@ -178,10 +178,12 @@ streamBtn.addEventListener("click", () => {
 
 songBtn.addEventListener("click", () => {
   const songsArray = data.map((track) => track.song).sort();
+
+  console.log(songsArray);
   const sortedArray = [];
 
   songsArray.forEach((song) => {
-    sortedArray.push(data.find((track) => track.song === song));
+    sortedArray.unshift(data.find((track) => track.song === song));
   });
 
   displayTracks(sortedArray);
