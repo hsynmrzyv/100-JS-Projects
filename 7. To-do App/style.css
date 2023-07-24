@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --dark-blue: #171e3a;
+  --light-blue: #242e4c;
+
+  --pink: #f570b5;
+  --green: #84cca4;
+  --yellow: #cb9770;
+
+  --transition: all 200ms linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-blue);
+  position: relative;
+}
+
+.signin-form {
+  background-color: #fff;
+  padding: 50px 40px;
+  border-radius: 10px;
+  position: absolute;
+  width: 345px;
+  position: relative;
+}
+
+.signin-form::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: calc(100% + 100px);
+  background-color: var(--light-blue);
+  z-index: -1;
+  top: -50px;
+  left: 100px;
+  border-radius: inherit;
+}
+
+.signin-form h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+
+.form-group input {
+  padding: 10px 15px;
+  font-size: 16px;
+  outline: none;
+  background: none;
+  border: 2px solid var(--dark-blue);
+  border-radius: 5px;
+  color: var(--dark-blue);
+}
+
+.form-group input:focus {
+  outline: none;
+}
+
+.form-group input::placeholder {
+  color: var(--dark-blue);
+}
+
+.signin-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.signin-button {
+  padding: 13px 20px;
+  color: #fff;
+  background-color: var(--light-blue);
+  font-size: 14px;
+  border-radius: 30px;
+  border: 2px solid var(--light-blue);
+  outline: none;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.signin-button:hover {
+  color: var(--dark-blue);
+  background-color: #fff;
+}
+
+.form-link {
+  color: var(--dark-blue);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.formAction-list {
+  text-align: center;
+  list-style: none;
+}

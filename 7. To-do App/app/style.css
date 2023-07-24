@@ -1,0 +1,85 @@
+.greet {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.addTask {
+  background-color: var(--light-blue);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 30px;
+  min-width: 500px;
+}
+
+.addTask form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.addTask form input {
+  background-color: transparent;
+  border: 2px solid #edf2f4;
+  padding: 12px;
+  font-family: inherit;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #edf2f4;
+}
+
+.addTask form input:focus {
+  outline: none;
+}
+
+.addTask form input::placeholder {
+  color: #edf2f4;
+}
+
+.btn {
+  color: #edf2f4;
+  background-color: #ef233c;
+  padding: 12px;
+  border: 2px solid #edf2f4;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: inherit;
+  transition: all 200ms linear;
+  font-size: 16px;
+}
+
+.btn:hover {
+  color: #ef233c;
+  background-color: #edf2f4;
+}
+
+.taskList {
+  border: 2px solid var(--light-blue);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.taskList ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-blue);
+  color: #edf2f4;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.taskList ul li span {
+  font-size: 18px;
+  margin-right: 30px;
+}
+
+.message {
+  color: #fff;
+  text-align: center;
+}
