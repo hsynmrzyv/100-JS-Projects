@@ -33,22 +33,47 @@ const updateTaskList = () => {
 
   taskListContainer.style.display = todos.length ? "block" : "none";
 
-  todos.forEach((todo) => {
-    const html = `<li>
-                  <span>${todo}</span>
-                  <button class="btn delete">Delete Task</button>
-                </li>`;
+  todos.forEach((todo, index) => {
+    const liEl = document.createElement("li");
+    const spanEl = document.createElement("span");
+    const buttonEl = document.createElement("button");
 
-    taskList.innerHTML += html;
-  });
-
-  const deleteBtns = document.querySelectorAll(".delete");
-  deleteBtns.forEach((deleteBtn, index) => {
-    deleteBtn.addEventListener("click", () => {
+    spanEl.textContent = todo;
+    buttonEl.textContent = "Delete Task";
+    buttonEl.className = "btn";
+    buttonEl.addEventListener("click", () => {
       removeTodo(index);
     });
+
+    liEl.insertAdjacentElement("afterbegin", spanEl);
+    liEl.insertAdjacentElement("beforeend", buttonEl);
+
+    taskList.insertAdjacentElement("afterbegin", liEl);
   });
 };
+
+// // Updating UI
+// const updateTaskList = () => {
+//   taskList.innerHTML = "";
+
+//   taskListContainer.style.display = todos.length ? "block" : "none";
+
+//   todos.forEach((todo) => {
+//     const html = `<li>
+//                   <span>${todo}</span>
+//                   <button class="btn delete">Delete Task</button>
+//                 </li>`;
+
+//     taskList.innerHTML += html;
+//   });
+
+//   const deleteBtns = document.querySelectorAll(".delete");
+//   deleteBtns.forEach((deleteBtn, index) => {
+//     deleteBtn.addEventListener("click", () => {
+//       removeTodo(index);
+//     });
+//   });
+// };
 
 // Remove todo functionalityxw
 const removeTodo = (index) => {
