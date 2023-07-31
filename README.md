@@ -78,6 +78,6 @@ This web application that allows you to manage your daily tasks efficiently. Thi
 <div>
 <img src='Images/7-1.png' width='24%'>
 <img src='Images/7-2.png' width='24%'>
-<img src='Images/7-1.png' width='24%'>
-<img src='Images/7-2.png' width='24%'>
+<img src='Images/7-3.png' width='24%'>
+<img src='Images/7-4.png' width='24%'>
 </div>
