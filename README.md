@@ -71,7 +71,7 @@ This is a straightforward web application that helps you manage your daily tasks
 
 ### 7. The Todo App
 
-<a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/6.%20To-do%20App'>The Todo App</a> | <a href='https://todoapp-7.netlify.app/'>Live Demo</a>
+<a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/7.%20To-do%20App'>The Todo App</a> | <a href='https://todoapp-7.netlify.app/'>Live Demo</a>
 
 This web application that allows you to manage your daily tasks efficiently. This app comes with a sign-in and sign-up functionality. You can easily add and remove todos, keeping your tasks organized and accessible anytime.
 
