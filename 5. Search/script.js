@@ -120,9 +120,6 @@ const data = [
 
 const trackList = document.querySelector(".track-list");
 const showBtn = document.querySelector("#show");
-const streamBtn = document.querySelector("#sortByStream");
-const songBtn = document.querySelector("#sortBySong");
-const artistBtn = document.querySelector("#sortByArtist");
 const searchInput = document.querySelector("#search-input");
 
 const displayTracks = (tracks) => {
@@ -170,32 +167,4 @@ searchInput.addEventListener("input", (e) => {
   }
 
   displayTracks(searchedData);
-});
-
-streamBtn.addEventListener("click", () => {
-  displayTracks(data.sort((a, b) => b.streamed - a.streamed));
-});
-
-songBtn.addEventListener("click", () => {
-  const songsArray = data.map((track) => track.song).sort();
-
-  console.log(songsArray);
-  const sortedArray = [];
-
-  songsArray.forEach((song) => {
-    sortedArray.unshift(data.find((track) => track.song === song));
-  });
-
-  displayTracks(sortedArray);
-});
-
-artistBtn.addEventListener("click", () => {
-  const artistsArray = data.map((track) => track.artist).sort();
-  const sortedArray = [];
-
-  artistsArray.forEach((artist) => {
-    sortedArray.push(data.find((track) => track.artist === artist));
-  });
-
-  displayTracks(sortedArray);
 });

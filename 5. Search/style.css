@@ -107,9 +107,3 @@ body {
   background-color: #778da9;
   color: #fff;
 }
-
-.btns {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
