@@ -101,5 +101,5 @@ This interactive application consists of 500 squares positioned in the center of
 
 <div>
 <img src='Images/9-1.png' width='49%'>
-<img src='Images/2-2.png' width='49%'>
+<img src='Images/9-2.png' width='49%'>
 </div>
