@@ -58,7 +58,7 @@ This web application allows you to easily search through your list of music and 
 <img src='Images/5-3.png' width='32%'>
 </div>
 
-### 5. The Todo List
+### 6. The Todo List
 
 <a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/6.%20To-do%20List'>The Todo List</a> | <a href='https://todolist-6.netlify.app/'>Live Demo</a>
 
@@ -67,4 +67,17 @@ This is a straightforward web application that helps you manage your daily tasks
 <div>
 <img src='Images/6-1.png' width='49%'>
 <img src='Images/6-2.png' width='49%'>
+</div>
+
+### 7. The Todo App
+
+<a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/6.%20To-do%20App'>The Todo App</a> | <a href='https://todoapp-7.netlify.app/'>Live Demo</a>
+
+This web application that allows you to manage your daily tasks efficiently. This app comes with a sign-in and sign-up functionality. You can easily add and remove todos, keeping your tasks organized and accessible anytime.
+
+<div>
+<img src='Images/7-1.png' width='24%'>
+<img src='Images/7-2.png' width='24%'>
+<img src='Images/7-1.png' width='24%'>
+<img src='Images/7-2.png' width='24%'>
 </div>
