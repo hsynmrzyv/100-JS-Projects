@@ -81,3 +81,14 @@ This web application that allows you to manage your daily tasks efficiently. Thi
 <img src='Images/7-3.png' width='24%'>
 <img src='Images/7-4.png' width='24%'>
 </div>
+
+### 8. The Calculator
+
+<a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/8.%20Calculator'>The Calculator</a> | <a href='https://calculator-8.netlify.app/'>Live Demo</a>
+
+This is a straightforward web-based calculator application that allows you to perform basic arithmetic operations effortlessly. With this project, you can add, subtract, multiply, and divide numbers on the go, making it a handy tool for quick calculations.
+
+<div>
+<img src='Images/8-1.png' width='49%'>
+<img src='Images/8-2.png' width='49%'>
+</div>
