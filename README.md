@@ -45,3 +45,15 @@ The Password Generator offers customizable options to create strong and secure p
 <img src='Images/4-4.png' width='19%'>
 <img src='Images/4-5.png' width='19%'>
 </div>
+
+### 5. The Music Finder
+
+<a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/4.%20Password%20Generator'>The Music Finder</a> | <a href='https://passwordgenerator-4.netlify.app/'>Live Demo</a>
+
+The Password Generator offers customizable options to create strong and secure passwords.Users can choose from four types of characters to include in the password: uppercase letters, lowercase letters, numbers, and symbols. By selecting or deselecting these options, users can customize the password's complexity to suit their needs.The generator includes a counter that allows users to set the desired password length.
+
+<div>
+<img src='Images/5-1.png' width='32%'>
+<img src='Images/5-2.png' width='32%'>
+<img src='Images/5-3.png' width='32%'>
+</div>
