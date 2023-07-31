@@ -92,3 +92,14 @@ This is a straightforward web-based calculator application that allows you to pe
 <img src='Images/8-1.png' width='49%'>
 <img src='Images/8-2.png' width='49%'>
 </div>
+
+### 9. The Hoverboard
+
+<a href='https://github.com/hsynmrzyv/100-JS-Projects/tree/main/9.%20Hoverboard'>The Hoverboard</a> | <a href='https://hoverboard-9.netlify.app/'>Live Demo</a>
+
+This interactive application consists of 500 squares positioned in the center of the website. When you hover over any square, its background color changes to a random vibrant hue. As you move the cursor away, the square smoothly transitions back to its initial color.
+
+<div>
+<img src='Images/9-1.png' width='49%'>
+<img src='Images/2-2.png' width='49%'>
+</div>
