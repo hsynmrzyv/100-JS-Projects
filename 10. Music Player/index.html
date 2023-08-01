@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Music Player</title>
+  </head>
+  <body class="flex items-center justify-center h-screen bg-slate-200">
+    <div class="container mx-auto flex items-center justify-center">
+      <div
+        id="music__player"
+        class="bg-white shadow-xl w-72 p-6 text-center text-gray-600 rounded"
+      >
+        <!-- Titles -->
+        <h2 id="title" class="text-base">Glimpse of Us</h2>
+        <h3 id="artist" class="text-xs mb-3">Joji</h3>
+        <!-- Poster -->
+        <div
+          id="player__image"
+          class="w-40 h-40 mx-auto rounded overflow-hidden shadow-lg"
+        >
+          <img
+            id="song__image"
+            src="images/glimpse-of-us.jpeg"
+            alt="Track Poster"
+            class="w-full h-full"
+          />
+        </div>
+        <!-- Song -->
+        <audio id="song" src="audio/glimpse-of-us.mp3"></audio>
+        <!-- Progress -->
+        <div
+          id="progress-container"
+          class="h-1 mt-6 mb-2 bg-gray-200 rounded overflow-hidden cursor-pointer"
+        >
+          <div id="progress" class="w-0 h-full bg-rose-600 rounded"></div>
+        </div>
+        <!-- Duration -->
+        <div id="duration-container" class="text-xs flex justify-between">
+          <span id="current__time">0:00</span>
+          <span id="duration">3:53</span>
+        </div>
+        <!-- Controls -->
+        <div id="controls" class="flex justify-center items-center">
+          <button
+            id="prev__btn"
+            class="hover:bg-gray-300 transition duration-100 ease-linear flex items-center justify-center cursor-pointer border-gray-300 border-2 w-14 h-14 rounded-full text-gray-500"
+          >
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button
+            id="play__btn"
+            class="hover:bg-gray-300 transition duration-100 ease-linear flex items-center justify-center cursor-pointer border-gray-300 border-2 w-16 h-16 rounded-full text-gray-500 mx-2"
+          >
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <button
+            id="next__btn"
+            class="hover:bg-gray-300 transition duration-100 ease-linear flex items-center justify-center cursor-pointer border-gray-300 border-2 w-14 h-14 rounded-full text-gray-500"
+          >
+            <i class="fas fa-forward" id="next" title="Next"></i>
+          </button>
+        </div>
+        <!-- Playlist -->
+        <ul id="playlist" class="mt-4"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
