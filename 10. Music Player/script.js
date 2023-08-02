@@ -60,3 +60,83 @@ const songs = [
 
 let isPlaying = false;
 let songIndex = 0;
+
+////////////////////////////////////////////////////////////////
+// Play and pause song
+const playSong = () => {
+  songEl.play();
+  isPlaying = true;
+  playBtn.innerHTML = `<i class="fa-solid fa-pause"></i>`;
+};
+
+const pauseSong = () => {
+  songEl.pause();
+  isPlaying = false;
+  playBtn.innerHTML = `<i class="fa-solid fa-play"></i>`;
+};
+
+playBtn.addEventListener("click", () => {
+  isPlaying ? pauseSong() : playSong();
+});
+
+////////////////////////////////////////////////////////////////
+
+// Next and previous song
+const nextSong = () => {
+  songIndex = songIndex === songs.length - 1 ? 0 : songIndex + 1;
+  displaySong(songs[songIndex]);
+  playSong();
+};
+
+const prevSong = () => {
+  songIndex = songIndex === 0 ? songs.length - 1 : songIndex - 1;
+  displaySong(songs[songIndex]);
+  playSong();
+};
+
+nextBtn.addEventListener("click", nextSong);
+prevBtn.addEventListener("click", prevSong);
+
+////////////////////////////////////////////////////////////////
+// Display song
+
+const displaySong = (song) => {
+  imageEl.src = `images/${song.name}.jpeg`;
+  songEl.src = `audio/${song.name}.mp3`;
+  titleEl.innerText = song.title;
+  artistEl.innerText = song.artist;
+};
+
+////////////////////////////////////////////////////////////////
+// Display time
+
+songEl.addEventListener("timeupdate", (e) => {
+  const { duration, currentTime: current } = e.target;
+  progressEl.style.width = `${(current / duration) * 100}%`;
+
+  if (!duration) return;
+
+  const durationMinute = Math.floor(duration / 60);
+  const durationSeconds = Math.floor(duration % 60);
+  const currentMinute = Math.floor(current / 60);
+  const currentSeconds = Math.floor(current % 60);
+
+  durationEl.textContent = `${durationMinute}:${String(
+    durationSeconds
+  ).padStart(2, "0")}`;
+  currentTimeEl.textContent = `${currentMinute}:${String(
+    currentSeconds
+  ).padStart(2, "0")}`;
+});
+
+////////////////////////////////////////////////////////////////
+// Move Forward
+
+progressContainerEl.addEventListener("click", (e) => {
+  const {
+    offsetX: clicked,
+    target: { clientWidth: width },
+  } = e;
+
+  songEl.currentTime = (clicked / width) * songEl.duration;
+});

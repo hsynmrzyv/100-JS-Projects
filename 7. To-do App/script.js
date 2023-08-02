@@ -15,8 +15,6 @@ const loadUsers = () => {
   if (storedUsers) {
     users = storedUsers;
   }
-
-  console.log(users);
 };
 
 loadUsers();
@@ -38,7 +36,6 @@ signinBtn.addEventListener("click", (e) => {
   // Create username cookie
   document.cookie = `username=${currentAccount.username}; path=/`;
 
-  console.log(document.cookie);
   // Empty input values
   username.value = "";
   password.value = "";
