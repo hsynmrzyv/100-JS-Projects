@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="h-screen flex items-center justify-center bg-gray-950 text-white"
+  >
+    <div class="container mx-auto flex flex-col items-center justify-center">
+      <!-- Digital Clock -->
+      <p id="digital__clock" class="mb-8 text-3xl">
+        <span id="d__hour">12</span> : <span id="d__minute">12</span> :
+        <span id="d__second">12</span>
+      </p>
+      <!-- Analog Clock -->
+      <div id="analog">
+        <!-- Clock -->
+        <div
+          id="analog__clock"
+          class="h-60 w-60 rounded-full ring-4 ring-white relative"
+        >
+          <!-- Second Hand -->
+          <div
+            id="second"
+            class="h-24 w-1 origin-bottom rounded-full bg-red-600 absolute left-1/2 top-[24px]"
+          ></div>
+          <!-- Minute Hand -->
+          <div
+            id="minute"
+            class="h-20 w-1 origin-bottom rounded-full bg-white absolute left-1/2 top-10"
+          ></div>
+          <!-- Hour Hand -->
+          <div
+            id="hour"
+            class="h-16 w-1 origin-bottom rounded-full bg-slate-300 absolute left-1/2 top-14"
+          ></div>
+          <!-- Dot in the middle -->
+          <div
+            class="absolute h-4 w-4 bg-white rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
