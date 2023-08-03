@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Captcha</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      class="relative flex min-h-screen text-gray-800 antialiased flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12"
+    >
+      <div class="relative py-3 sm:w-96 mx-auto text-center">
+        <span class="text-2xl font-light">Enter the captcha to continue</span>
+        <div class="mt-4 bg-white shadow-md rounded-lg text-left">
+          <div class="h-2 bg-green-600 rounded-t-md"></div>
+          <div class="px-8 py-6">
+            <h2 class="text-center text-xl font-bold" id="captcha__text"></h2>
+
+            <input
+              type="text"
+              placeholder="Enter the captcha"
+              id="input"
+              class="border w-full h-5 px-3 py-5 mt-2 focus:outline-none focus:ring-2 ring-blue-600 rounded-md"
+            />
+            <button
+              class="mt-4 bg-gray-500 text-white py-2 px-6 rounded-md hover:opacity-80 cursor-not-allowed"
+              disabled="true"
+              id="btn"
+            >
+              Continue
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
