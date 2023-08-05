@@ -129,14 +129,14 @@ songEl.addEventListener("timeupdate", (e) => {
   ).padStart(2, "0")}`;
 });
 
+songEl.addEventListener("ended", nextSong);
+
 ////////////////////////////////////////////////////////////////
 // Move Forward
 
-progressContainerEl.addEventListener("click", (e) => {
-  const {
-    offsetX: clicked,
-    target: { clientWidth: width },
-  } = e;
-
-  songEl.currentTime = (clicked / width) * songEl.duration;
+progressContainerEl.addEventListener("click", function (event) {
+  const width = this.clientWidth;
+  const clicked = event.offsetX;
+  const { duration } = songEl;
+  songEl.currentTime = (clicked / width) * duration;
 });
