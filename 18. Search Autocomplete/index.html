@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Search Autocomplete</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="h-screen flex items-center justify-center bg-slate-700">
+    <div class="w-1/2 mx-auto bg-white rounded-md">
+      <!-- Search Box -->
+      <div id="search__box" class="flex items-center p-4">
+        <input
+          id="input"
+          type="text"
+          placeholder="Search"
+          autocomplete="false"
+          class="flex-1 h-12 border-none outline-none text-lg text-slate-700"
+        />
+        <button class="text-xl cursor-pointer text-slate-700">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <!-- Result Box -->
+      <div>
+        <ul id="result__box" class="hidden border-t border-slate-800 p-4"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
