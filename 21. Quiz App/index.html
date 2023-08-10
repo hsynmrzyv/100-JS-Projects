@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="h-screen flex items-center justify-center">
+    <div
+      id="quiz"
+      class="w-[400px] bg-blue-600 rounded-lg text-center p-10 text-white flex flex-col justify-between"
+    >
+      <!-- Question -->
+      <h1 id="question" class="text-2xl font-bold mb-10">Question goes here</h1>
+      <!-- Answers -->
+      <ul id="answers" class="mb-8">
+        <li class="mb-3">
+          <button
+            class="answer__btn w-full border-2 border-white p-2 cursor-pointer rounded transition-all duration-200 shadow-md active:scale-95 hover:bg-white hover:text-blue-600"
+            data-answer="a"
+          >
+            Answer 1
+          </button>
+        </li>
+        <li class="mb-3">
+          <button
+            class="answer__btn w-full border-2 border-white p-2 cursor-pointer rounded transition-all duration-200 shadow-md active:scale-95 hover:bg-white hover:text-blue-600"
+            data-answer="b"
+          >
+            Answer 2
+          </button>
+        </li>
+        <li class="mb-3">
+          <button
+            class="answer__btn w-full border-2 border-white p-2 cursor-pointer rounded transition-all duration-200 shadow-md active:scale-95 hover:bg-white hover:text-blue-600"
+            data-answer="c"
+          >
+            Answer 3
+          </button>
+        </li>
+        <li class="mb-3">
+          <button
+            class="answer__btn w-full border-2 border-white p-2 cursor-pointer rounded transition-all duration-200 shadow-md active:scale-95 hover:bg-white hover:text-blue-600"
+            data-answer="d"
+          >
+            Answer 4
+          </button>
+        </li>
+      </ul>
+      <!-- Submit Button -->
+      <button
+        id="submit"
+        class="bg-white text-blue-600 border-white border-2 self-center px-4 py-2 rounded hover:bg-blue-600 hover:text-white transition-all"
+      >
+        Submit
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
