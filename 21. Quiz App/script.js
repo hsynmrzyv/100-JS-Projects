@@ -24,48 +24,48 @@ const quizData = [
     d: "Benjamin Franklin",
     correct: "c",
   },
-  // {
-  //   question: "Which planet in our solar system has the most moons?",
-  //   a: "Jupiter",
-  //   b: "Saturn",
-  //   c: "Mars",
-  //   d: "Neptune",
-  //   correct: "a",
-  // },
-  // {
-  //   question:
-  //     "Which famous artist is known for cutting off a part of his own ear?",
-  //   a: "Pablo Picasso",
-  //   b: "Vincent van Gogh",
-  //   c: "Leonardo da Vinci",
-  //   d: "Michelangelo",
-  //   correct: "b",
-  // },
-  // {
-  //   question: "In the 'Harry Potter' series, what is the name of Harry's owl?",
-  //   a: "Gandalf",
-  //   b: "Merlin",
-  //   c: "Nimbus",
-  //   d: "Hedwig",
-  //   correct: "d",
-  // },
-  // {
-  //   question:
-  //     "Which South American country is the largest in terms of land area?",
-  //   a: "Argentina",
-  //   b: "Peru",
-  //   c: "Brazil",
-  //   d: "Chile",
-  //   correct: "c",
-  // },
-  // {
-  //   question: "Which author created the detective character Sherlock Holmes??",
-  //   a: "Agatha Christie",
-  //   b: "Arthur Conan Doyle",
-  //   c: "Dashiell Hammett",
-  //   d: "Raymond Chandler",
-  //   correct: "b",
-  // },
+  {
+    question: "Which planet in our solar system has the most moons?",
+    a: "Jupiter",
+    b: "Saturn",
+    c: "Mars",
+    d: "Neptune",
+    correct: "a",
+  },
+  {
+    question:
+      "Which famous artist is known for cutting off a part of his own ear?",
+    a: "Pablo Picasso",
+    b: "Vincent van Gogh",
+    c: "Leonardo da Vinci",
+    d: "Michelangelo",
+    correct: "b",
+  },
+  {
+    question: "In the 'Harry Potter' series, what is the name of Harry's owl?",
+    a: "Gandalf",
+    b: "Merlin",
+    c: "Nimbus",
+    d: "Hedwig",
+    correct: "d",
+  },
+  {
+    question:
+      "Which South American country is the largest in terms of land area?",
+    a: "Argentina",
+    b: "Peru",
+    c: "Brazil",
+    d: "Chile",
+    correct: "c",
+  },
+  {
+    question: "Which author created the detective character Sherlock Holmes??",
+    a: "Agatha Christie",
+    b: "Arthur Conan Doyle",
+    c: "Dashiell Hammett",
+    d: "Raymond Chandler",
+    correct: "b",
+  },
 ];
 
 // Initial
