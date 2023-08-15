@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-screen flex items-center justify-center bg-black">
+    <!-- Quote Container -->
+    <div
+      id="quote__container"
+      class="flex flex-col h-[400px] w-[250px] bg-blue-500 rounded-2xl relative"
+    >
+      <!-- Header -->
+      <div id="title__bg" class="bg-white p-3 rounded-tr-2xl rounded-tl-2xl">
+        <h4 id="title" class="text-xs poppins">Quote Generator</h4>
+      </div>
+      <!-- Quote -->
+      <div class="p-3">
+        <h1 id="quote" class="pacifico text-4xl mb-5">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt,
+          odio.
+        </h1>
+        <p id="author" class="text-xs">Lorem Ipsum</p>
+        <button
+          id="generate"
+          class="bg-white p-2 rounded absolute bottom-3 left-3 active:scale-95"
+        >
+          New Quote
+        </button>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
